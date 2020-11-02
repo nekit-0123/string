@@ -29,7 +29,7 @@ public:
 		{
 			va_list argList;
 			va_start(argList, pcFormat);
-       		TMyString = _format(pcFormat, argList);
+       			TMyString = _format(pcFormat, argList);
 			va_end(argList);
 			clearBuf();
 		}
@@ -55,7 +55,7 @@ public:
        	{
 		if (!TMyString.empty())
 		{
-       		setlocale(LC_ALL, ""); 
+       			setlocale(LC_ALL, ""); 
 			_strupr_s(const_cast<char*>(TMyString.c_str()), TMyString.size()+1);
 		}
 		return TMyString;
@@ -65,7 +65,7 @@ public:
        	{
 		if (!TMyString.empty())
 		{
-       		setlocale(LC_ALL, "");        	
+       			setlocale(LC_ALL, "");        	
 			_strlwr_s(const_cast<char*>(TMyString.c_str()), TMyString.size()+1);
 		}
 		return TMyString;
@@ -75,7 +75,7 @@ public:
        	{
 		if (!TMyString.empty())
 		{
-       		setlocale(LC_ALL, "");       	
+       			setlocale(LC_ALL, "");       	
 			_strrev(const_cast<char*>(TMyString.c_str()));
 		}
 		return TMyString;
